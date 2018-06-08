@@ -4,6 +4,8 @@
 
 #include "RenderManager.h"
 
+
+//B
 LTexture::LTexture()
 {
   //Initialize
