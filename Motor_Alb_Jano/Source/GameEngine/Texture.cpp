@@ -4,8 +4,6 @@
 
 #include "RenderManager.h"
 
-
-//B
 LTexture::LTexture()
 {
   //Initialize
@@ -125,7 +123,7 @@ void LTexture::setBlendMode(SDL_BlendMode blending)
 void LTexture::setAlpha(Uint8 alpha)
 {
   //Modulate texture alpha
-  SDL_SetTextureAlphaMod(mTexture, alpha);//A
+  SDL_SetTextureAlphaMod(mTexture, alpha);
 }
 
 void LTexture::render(int x, int y, SDL_Rect* clip, double angle, SDL_Point* center, SDL_RendererFlip flip)
