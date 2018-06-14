@@ -123,13 +123,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\GameEngine\CollisionManager.cpp" />
     <ClCompile Include="..\..\Source\GameEngine\InputManager.cpp" />
     <ClCompile Include="..\..\Source\GameEngine\RenderManager.cpp" />
     <ClCompile Include="..\..\Source\GameEngine\Texture.cpp" />
     <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="MotorToolset.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\GameEngine\CollisionManager.h" />
     <ClInclude Include="..\..\Source\GameEngine\InputManager.h" />
     <ClInclude Include="..\..\Source\GameEngine\RenderManager.h" />
     <ClInclude Include="..\..\Source\GameEngine\Singleton.h" />
