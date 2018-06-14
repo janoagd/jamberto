@@ -1,0 +1,6 @@
+﻿  GameObject.cpp
+c:\users\alber\documents\universidad\motores\el repositorio jamberto\motor_alb_jano\source\gameengine\motortoolset.h(46): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+c:\users\alber\documents\universidad\motores\el repositorio jamberto\motor_alb_jano\source\gameengine\motortoolset.h(65): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\alber\documents\universidad\motores\el repositorio jamberto\motor_alb_jano\source\gameengine\motortoolset.h(70): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\alber\documents\universidad\motores\el repositorio jamberto\motor_alb_jano\source\gameengine\motortoolset.h(75): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  GameEngine.vcxproj -> C:\Users\alber\Documents\Universidad\Motores\El repositorio jamberto\Motor_Alb_Jano\Projects\Debug\GameEngine.lib

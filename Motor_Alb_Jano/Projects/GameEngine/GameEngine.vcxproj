@@ -124,19 +124,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\GameEngine\CollisionManager.cpp" />
+    <ClCompile Include="..\..\Source\GameEngine\GameObject.cpp" />
     <ClCompile Include="..\..\Source\GameEngine\InputManager.cpp" />
     <ClCompile Include="..\..\Source\GameEngine\RenderManager.cpp" />
     <ClCompile Include="..\..\Source\GameEngine\Texture.cpp" />
-    <ClCompile Include="GameObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Source\GameEngine\CollisionManager.h" />
+    <ClInclude Include="..\..\Source\GameEngine\GameObject.h" />
     <ClInclude Include="..\..\Source\GameEngine\InputManager.h" />
+    <ClInclude Include="..\..\Source\GameEngine\MotorToolset.h" />
     <ClInclude Include="..\..\Source\GameEngine\RenderManager.h" />
     <ClInclude Include="..\..\Source\GameEngine\Singleton.h" />
     <ClInclude Include="..\..\Source\GameEngine\Texture.h" />
-    <ClInclude Include="GameObject.h" />
-    <ClInclude Include="MotorToolset.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

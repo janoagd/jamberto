@@ -4,39 +4,39 @@ namespace MotorToolset
 {
 	class Vector2{
 	public:
-		float x;
-		float y;
+		int x;
+		int y;
 		
 #pragma region Constructors
-		Vector2(float _x, float _y) : x(_x), y(_y) {}//Parametrized constructor
+		Vector2(int _x, int _y) : x(_x), y(_y) {}//Parametrized constructor
 		Vector2() : x(0), y(0) {}					 //Empty constructor
 #pragma endregion
 
 #pragma region Utility functions
 
-		Vector2 Zero()
+		inline Vector2 Zero()
 		{
 			return Vector2();
 		}
 
-		Vector2 One()
+		inline Vector2 One()
 		{
 			return Vector2(1, 1);
 		}
 
-		Vector2 Right()
+		inline Vector2 Right()
 		{
 			return Vector2(1, 0);
 		}
-		Vector2 Up()
+		inline Vector2 Up()
 		{
 			return Vector2(0, 1);
 		}
-		Vector2 Left()
+		inline Vector2 Left()
 		{
 			return Vector2(-1, 0);
 		}
-		Vector2 Down()
+		inline Vector2 Down()
 		{
 			return Vector2(0, -1);
 		}
@@ -93,24 +93,25 @@ namespace MotorToolset
 
 #pragma region Constructors
 
-		Rectangle(float _width, float _height) : origin(0,0), size(_width,_height) {}//Default constructor with origin at 0,0
+		Rectangle(int _width, int _height) : origin(0,0), size(_width,_height) {}//Default constructor with origin at 0,0
 
-		Rectangle(float _centerX, float _centerY, float _width, float _height) : size(_width, _height) {
+		Rectangle(int _centerX, int _centerY, int _width, int _height) : size(_width, _height) {
 																					//From center Constructor
 			center = Vector2(_centerX, _centerY);
 			computeOrigin();
 		}
 
-		Rectangle(float _originX, float _originY, float _width, float _height) : origin(_originX,_originY), size(_width, _height) {}
+		//Rectangle(int _originX, int _originY, int _width, int _height) : origin(_originX,_originY), size(_width, _height) {}
 																					//Parametrized constructor
 		Rectangle() : origin(0,0), size(1, 1) {}//Default constructor 
 
-		Rectangle(Vector2 _origin, Vector2 _size) : origin(_origin), size(_size) {}	//Array Constructor
+		//Rectangle(Vector2 _origin, Vector2 _size) : origin(_origin), size(_size) {}	//Array Constructor
 
 		Rectangle(Vector2 _center, Vector2 _size) : size(_size), center(_center) {	//From Center Array Constructor
 			computeOrigin();
 		}
 
+		~Rectangle() {};
 #pragma endregion
 
 #pragma region Functions
