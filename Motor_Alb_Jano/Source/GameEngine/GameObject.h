@@ -27,7 +27,7 @@ private:
 
 	void setRectangle()
 	{
-		objRect = Rectangle(center, size);
+		objRect = Rectangle(center, size)
 	}
 	
 
